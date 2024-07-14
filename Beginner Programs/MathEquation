@@ -1,0 +1,15 @@
+#MathEquation
+#Last Modified: July 6th, 2024
+#Author: Bhavan 
+#Desc: program will solve the linear equation y = mx + b. Create variables of type float for y, m, and b and solve for x. 
+
+# user input
+y = int(input("Y-Value: "))      #y
+m = float(input("Slope: "))      #slope
+b = int(input("Y-Intercept: "))  #y-intercept
+
+# solve for x
+x = (int(y) - (int(b))/m)  #typecast y and b to an int first
+
+# output answer
+print ("X-Value: " + str(x))
