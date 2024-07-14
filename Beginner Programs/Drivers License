@@ -1,0 +1,19 @@
+#DriversLicense
+#Last Modified: May 17th, 2024
+#Author: Bhavan 
+#Desc: program prompts for age and determine if you are eligible to obtain your driver’s license
+
+#INPUT&PROCESSING: get user''s age and assign to variable
+age = int(input("Enter your age:"))
+
+#PROCESSING: series of checks to see if the user is old enough to get their drivers license
+if age >= 16 and age <= 119:
+          print("You can get your drivers license, you are", age, "years old.") #can get
+elif age <= 15 and age > 0:
+          print("You can't get your drivers license, you are", age, "years old.") # too young
+elif age <= 0:
+          print("You can't get your drivers license, you are a time traveller!") #isn't alive yet
+elif age > 120:
+          print("You can't get your drivers license, you are way too old!") #too much life
+else:
+    print("Invalid Input")
