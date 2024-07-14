@@ -1,0 +1,12 @@
+#1_Area
+#Last Modified: July 4th, 2024
+#Author: Bhavan 
+#Desc: Program gets the user to input the dimensions, then their input is translated to what the area would be of the shape
+
+#INPUT: Get input from user
+print("Enter a width")  #Ask user for width
+width = float(input())
+print("Enter a height") #Ask user for height
+height = float(input())
+print(str(width*height)+" is the area for the rectangle") #PROCESS&OUTPUT: The input is turned into a string then outputted
+print(str((width/2)*height) + " is the area for the triangle") #PROCESS&OUTPUT: The input is turned into a string, divided by 2, then outputted
