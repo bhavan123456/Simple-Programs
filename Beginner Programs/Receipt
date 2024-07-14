@@ -1,0 +1,26 @@
+#Receipt
+#Last Modified: July 5th, 2024
+#Author: Bhavan 
+#Desc: prints receipt for item and tax and cost of it
+
+# Prompting the user for item details
+description = input("Enter the description: ")
+price = float(input("Enter the price: "))
+quantity = int(input("Enter the quantity: "))
+
+# Calculating the subtotal
+subtotal = price * quantity
+
+# Calculating the tax
+tax_rate = 0.13  # Assuming 13% tax rate (Canadian Rate)
+tax = subtotal * tax_rate
+
+# Calculating the total cost including taxes
+total = subtotal + tax
+
+# Outputting the receipt
+print("\nRECEIPT")
+print("Subtotal     Description   QTY  price")
+print(f"${subtotal:.2f}    {description}   {quantity}    ${price:.2f}")
+print(f"${tax:.2f}    HST          ")
+print(f"Total: ${total:.2f}")
