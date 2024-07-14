@@ -1,0 +1,12 @@
+#Sphere
+#Last Modified: April 11th, 2024
+#Author: Bhavan Sehmbi
+#Desc: Program uses the sphere calculation to calculate the volume of a sphere with the radius of 5
+
+#PROCESSING: we need to import math to perform certain concepts that aren't functions in python
+import math
+
+#PROCESSING: creating the variable for radius. Since we are given 5, the radius will be 5
+radius = 5
+volume = (4/3)*math.pi*(radius ** 3) #PROCESSING: calculating the volume of the sphere using the calculation
+print(volume) #OUTPUT: Prints the volume
