@@ -1,0 +1,13 @@
+#Reverse
+#Last Modified: July 1st, 2024
+#Author: Bhavan 
+#Desc: reverses any 5 letter word
+
+#INPUT&PROCESSING: getting the input and assigning it to the variable
+myString = input("Enter a word:")
+
+#PROCESSING: reversing the word
+myString_reversed = myString[::-1]
+
+#OUTPUT: printing the reversed word
+print(myString_reversed)
