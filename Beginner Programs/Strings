@@ -1,0 +1,7 @@
+#StringChallenges
+#Last Modified: June 29th, 2024
+#Author: Bhavan 
+#Desc: The program outputs lots of print commands using only one print command
+
+#OUTPUT: program prints everything out from this one line
+print("HI", "\n" + "hi"*7, "\nHi" + "hi" *6, "\nSorry I'm late" *3, "\n//\\\\")
