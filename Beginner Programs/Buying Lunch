@@ -1,0 +1,22 @@
+#SchoolCaf
+#Last Modified: April 4th, 2024
+#Author: Bhavan Sehmbi
+#Desc: charges tax if price is over $4
+
+#INPUT&PROCESSING: getting price from user
+user_price = float(input("Enter purchase from school caf:"))
+
+#PROCESSING: checks if price is over $4
+if user_price > 4:
+    tax = user_price * 0.13
+    total_cost = user_price + tax
+else:
+    tax = 0.00
+
+#PROCESSING: getting total cost
+total_cost = user_price + tax
+
+#OUTPUT: print the costs and tax
+print("Price before tax: $" + str(user_price))
+print("Tax: $" + str(tax))
+print("Final cost: $" + str(total_cost))
