@@ -1,0 +1,24 @@
+#DrawDie
+#Last Modified: May 3rd, 2024
+#Author: Bhavan 
+#Desc: program outputs dice block
+
+def drawDie(value):
+    if value < 1 or value > 6:
+        print("Invalid dice value. Value should be between 1 and 6.")
+        return
+
+    # Draw the dice shape
+    print("+-------+")
+    print("|       |")
+    print("|   {}   |".format(value))
+    print("|       |")
+    print("+-------+")
+
+#OUTPUT: printing the die
+drawDie(1)
+drawDie(2)
+drawDie(3)
+drawDie(4)
+drawDie(5)
+drawDie(6)
