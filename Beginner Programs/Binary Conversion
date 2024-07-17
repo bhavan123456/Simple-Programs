@@ -1,0 +1,13 @@
+#BinaryConversion
+#Last Modified: May 12th, 2024
+#Author: Bhavan 
+#Desc: Program will convert and display a number in its binary form.
+
+#PROCESSING: initializing a variable to convert to binary
+x_to_become_binary = 23
+
+#OUTPUT: printing the number that is going to be converted to binary
+print(x_to_become_binary)
+
+#OUTPUT: printing the number in its binary form
+print(bin(x_to_become_binary))
