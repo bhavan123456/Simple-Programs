@@ -1,0 +1,19 @@
+#BookCost
+#Last Modified: July 5th, 2024
+#Author: Bhavan 
+#Desc: Program calculates the wholesale cost of 60 books using the given constants and variables
+
+#initializing all contant numbers
+cover_price = 24.95
+discount = 0.4
+shipping_first = 3
+shipping_additional = 0.75
+
+#PROCESSING: initializing the num_copies variable to determine the total amount of books being bought
+num_copies = 60
+
+#PROCESSING: initializing the total_cost variable and combining all the calculations toghether to finalize the cost
+total_cost = ((num_copies*cover_price) *(1-discount) + ((shipping_additional *num_copies) + (shipping_first - 0.25)))
+
+#OUTPUT: prints the cost of 60 books
+print("The total cost of 60 books is", total_cost)
