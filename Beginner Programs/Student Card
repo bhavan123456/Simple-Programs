@@ -1,0 +1,17 @@
+#StudentCard
+#Last Modified: May 19th, 2024
+#Author: Bhavan 
+#Desc: The program allows the user to create a student card. Then, it will output the data in an organized way.
+
+
+#PROCESSING: creating the variables to store the students information
+student_first_name = (input("Enter your first name:"))
+student_last_name = (input("Enter your last name:"))
+student_num = int(input("Enter your student number:"))
+student_homeroom = int(input("Enter your homeroom:"))
+
+#OUTPUT: printing out all of the students information that was given
+print("Student's first name is", student_first_name)
+print("Student's last name is", student_last_name)
+print("Their student number is", student_num)
+print("Their homeroom is: Room", student_homeroom)
