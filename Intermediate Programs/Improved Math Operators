@@ -1,0 +1,54 @@
+#MathOperators_ThreePointsOh
+#Last Modified: March 19th, 2024
+#Author: Bhavan 
+#Desc: calculator that takes users inputs and operators, also allows exits
+
+#PROCESSING: making "add" function
+def add(num1, num2):
+    return num1 + num2
+
+#PROCESSING: making "subtract" function
+def subtract(num1, num2):
+    return num1 - num2
+
+#PROCESSING: making "multiply" function
+def multiply(num1, num2):
+    return num1 * num2
+
+#PROCESSING: making "divide" function
+def divide(num1, num2):
+    if num2 == 0:
+        return "Error: Cannot divide by zero"
+    return num1 / num2
+
+#PROCESSING: making "modulus" function
+def modulus(num1, num2):
+    return num1 % num2
+
+#PROCESSING: giving users the options of operators
+def calculator():
+    operation = input("Choose an operation (+, -, *, /, %) or 'exit' to quit: ")
+
+#INPUT&PROCESSING: looping the program and taking user input 
+    while operation != "exit":
+        num1 = int(input("Enter the first number: "))
+        num2 = int(input("Enter the second number: "))
+
+        if operation == "+":
+            result = add(num1, num2)
+        elif operation == "-":
+            result = subtract(num1, num2)
+        elif operation == "*":
+            result = multiply(num1, num2)
+        elif operation == "/":
+            result = divide(num1, num2)
+        elif operation == "%":
+            result = modulus(num1, num2)
+        else:
+            result = "Invalid operation"
+
+        print("Result: ", result)
+        operation = input("Choose an operation (+, -, *, /, %) or 'exit' to quit: ")
+
+    print("Goodbye!")
+calculator()
