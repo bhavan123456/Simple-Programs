@@ -1,0 +1,27 @@
+#MarkConverter
+#Last Modified: July 3rd, 2024
+#Author: Bhavan 
+#Desc: converts number grades to letters
+
+def calculate_letter_grade(mark):
+    if mark >= 90:
+        return "A"
+    elif mark >= 80:
+        return "B"
+    elif mark >= 70:
+        return "C"
+    elif mark >= 60:
+        return "D"
+    else:
+        return "F"
+
+marks = []
+for i in range(4):
+    mark = float(input(f"Enter mark {i+1}: "))
+    marks.append(mark)
+
+letter_grades = [calculate_letter_grade(mark) for mark in marks]
+
+print("Letter grades:")
+for i in range(4):
+    print(f"Mark {i+1}: {letter_grades[i]}")
