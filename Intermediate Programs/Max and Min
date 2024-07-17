@@ -1,0 +1,29 @@
+#MaxAndMin
+#Last Modified: March 23rd, 2024
+#Author: Bhavan 
+#Desc: program asks the user for two numbers, and output which is the maximum and which is the minimum
+
+#PROCESSING: making the maximum function
+def maximum(num1, num2):
+    if num1 > num2:
+        return num1
+    else:
+        return num2
+
+#PROCESSING: making the minimum funnction
+def minimum(num1, num2):
+    if num1 < num2:
+        return num1
+    else:
+        return num2
+
+#INPUT: Taking input from the user
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+#PROCESSING: Calling the functions and printing the results
+max_num = maximum(num1, num2)
+min_num = minimum(num1, num2)
+
+print("The maximum number is:", max_num)
+print("The minimum number is:", min_num)
