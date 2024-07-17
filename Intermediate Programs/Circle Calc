@@ -1,0 +1,58 @@
+#Circle
+#Last Modified: May 27th, 2024
+#Author: Bhavan 
+#Desc: program which allows a user to complete one of three calculations: Circumference of a Circle, Area of a Circle, or Volume of a Sphere
+
+#Importing the math module for mathematical functions
+import math
+
+# Function to calculate the circumference of a circle
+def circumferenceCircle(radius):
+    return 2 * math.pi * radius
+
+# Function to calculate the area of a circle
+def areaCircle(radius):
+    return math.pi * radius**2
+
+# Function to calculate the volume of a sphere
+def volumeSphere(radius):
+    return (4/3) * math.pi * radius**3
+
+# Function to validate the user's selection
+def validateSelection(selection):
+    while selection not in ['1', '2', '3']:
+        print("Invalid selection. Please enter 1, 2, or 3.")
+        selection = input("Enter your selection: ")
+    return selection
+
+# Function to validate the radius input
+def validateRadius():
+    while True:
+        try:
+            radius = float(input("Enter the radius: "))
+            if radius > 0:
+                return radius
+            else:
+                print("Radius must be greater than zero.")
+        except ValueError:
+            print("Invalid radius. Please enter a valid number.")
+
+# Main function of the program
+def main():
+    selection = validateSelection(input("Enter your selection (1, 2, or 3): "))
+
+    radius = validateRadius()
+
+    if selection == '1':
+        print("Circumference of the circle: ", circumferenceCircle(radius))
+    elif selection == '2':
+        print("Area of the circle: ", areaCircle(radius))
+    elif selection == '3':
+        print("Volume of the sphere: ", volumeSphere(radius))
+
+    repeat = input("Do you want to repeat a calculation? (yes/no): ")
+    if repeat.lower() == "yes":
+        main()
+    else:
+        print("Thank you for using the program.")
+main()
