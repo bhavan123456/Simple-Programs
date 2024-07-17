@@ -1,0 +1,21 @@
+#BonusCalculator
+#Last Modified: June 3rd, 2024
+#Author: Bhavan 
+# calculates the weekly bonus of a Baskin-Robbins employee
+
+#INPUT: get data input from the user
+print ("Baskin-Robbins Bonus Calculator")
+cones = float(input("Enter the number of cones sold: ")) # number of cones sold
+totalBonus = 0 # total bonus
+
+#PROCESSING: calculate bonus
+if cones >= 150 and cones <= 250:       # $0.10 per cone
+    baseBonus = 10
+    totalBonus = baseBonus + .10 * (cones - 150)
+elif cones > 250:                       # $0.25 per cone
+    baseBonus = 10 + (250 - 150) * .10
+    totalBonus = baseBonus + .25 * (cones - 250)
+
+#OUTPUT: format and display bonus
+totalBonus = round(totalBonus,2)
+print("Congratulations! You have earned a bonus of $"+ str(totalBonus))
