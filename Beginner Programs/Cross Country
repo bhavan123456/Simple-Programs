@@ -1,0 +1,25 @@
+#CrossCountry
+#Last Modified: June 11th, 2024
+#Author: Bhavan 
+#Desc: Program calculates how long it takes Bhavan to run 5 mile laps with 3 fast pased laps and 2 easy pased laps in minutes and seconds
+
+#PROCESSING: Initializing the constants that are Bhavan's running times
+easy_pase = ((4 * 60)+15)
+fast_pase = ((3 * 60)+12)
+
+#OUTPUT: these upcoming lines will output how much time it takes in seconds on each lap for Bhavan to run
+print("Lap 1 =", easy_pase, "seconds") #Lap 1
+print("Lap 2 =", fast_pase, "seconds") #Lap 2
+print("Lap 3 =", fast_pase, "seconds") #Lap 3
+print("Lap 4 =", fast_pase, "seconds") #Lap 4
+print("Lap 5 =", easy_pase, "seconds") #Lap 5
+
+#PROCESSING: combining all the time for each lap toghether to declare the total time
+total_time = (((easy_pase * 2) + (fast_pase * 3)))
+
+#PROCESSING: calcullating the minutes and seconds of the total time
+minutes = total_time // 60
+seconds = total_time % 60
+
+#OUTPUT: outputting how long it took Bhavan to run 5 mile laps in minutes and seconds
+print("Bhavan will take", minutes, "minutes and", seconds, "seconds to run 5 mile laps!")
