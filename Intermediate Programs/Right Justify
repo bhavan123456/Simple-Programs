@@ -1,0 +1,15 @@
+#RightJustify
+#Last Modified: April 17th, 2024
+#Author: Bhavan 
+#Desc: the sentence will be pushed all the way to the side part of the sentence will be on a new line
+
+#PROCESSING: making the "rightJustify" function
+def rightJustify(sentence):
+    spaces = 73
+    print(" "* spaces + sentence)
+
+#OUTPUT: printing the example
+sentence = "Hello, World!"
+
+#PROCESSING: using the function
+rightJustify(sentence)
