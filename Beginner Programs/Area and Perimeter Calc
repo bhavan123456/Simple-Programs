@@ -1,0 +1,20 @@
+#Area
+#Last Modified: May 30th, 2024
+#Author: Bhavan 
+#Desc: Program takes the users inputs for length and width. Using the input, the program creates a rectangle and tells the user the perimeter and area of that rectangle
+
+#INPUT: Ask user for length and with of the triangle, while also using float to allow decimal input
+rect_length = float((input)("Input the length of your rectangle:"))
+rect_width = float((input)("Input the width of your rectangle:"))
+
+#PROCESSING: calculating the area of the rectangle with the users input
+area_rectangle_created = (rect_length*rect_width)
+
+#OUTPUT: telling the user the area of the shape in meters squared
+print(area_rectangle_created, "m2 is the area")
+
+#PROCESSING: calculating the perimeter of the rectangle using the users input
+perimeter_rectangle_created = ((rect_length*2)+(rect_width*2))
+
+#OUTPUT: telling the user the perimeter of the rectangle
+print(perimeter_rectangle_created, "m is the perimeter")
