@@ -1,0 +1,17 @@
+#Smart
+#Last Modified: April 22th, 2024
+#Author: Bhavan 
+#Desc: program that prints out “I am so smart” and prompts the user to see if they want to print it again.
+
+#PROCESSING
+count = 0
+
+while True:
+    print("I am so smart") #OUTPUT: printing phrase
+    count = count + 1 #PROCESSING: count is increased
+    
+    choice = input("Print again? (yes/no): ") #INPUT&PROCESSING: getting input from user
+    if choice.lower() == "no":
+        break
+
+print("The sentence was printed", count, "times.")
