@@ -1,0 +1,23 @@
+#Odd
+#Last Modified: June 22nd, 2024
+#Author: Bhavan 
+#Desc: outputs all odd numbers from 1 to some end value as determined by the user
+
+#INPUT&PROCESSING: Take user input for the end value
+end_value = int(input("Enter the end value: "))
+
+# Initialize the sum variable
+sum_of_numbers = 0
+
+# Iterate over the range from 1 to end_value (inclusive)
+for number in range(1, end_value + 1):
+    # Check if the number is odd
+    if number % 2 != 0:
+        # Print the odd number
+        print(number)
+        # Add the odd number to the sum
+        sum_of_numbers += number
+
+# Print the total sum
+print("The total sum is:", sum_of_numbers)
+
