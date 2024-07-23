@@ -1,0 +1,23 @@
+#Even
+#Last Modified: June 23rd, 2024
+#Author: Bhavan 
+#Desc: same as Odd.py, but with even numbers
+
+#INPUT&PROCESSING: Take user input for the end value
+end_value = int(input("Enter the end value: "))
+
+# Initialize the sum variable
+sum_of_numbers = 0
+
+# Iterate over the range from 1 to end_value
+for number in range(2, end_value + 1):
+    # Check if the number is odd
+    if number % 2 != 1:
+        # Print the odd number
+        print(number)
+        # Add the odd number to the sum
+        sum_of_numbers += number
+
+# Print the total sum
+print("The total sum is:", sum_of_numbers)
+
