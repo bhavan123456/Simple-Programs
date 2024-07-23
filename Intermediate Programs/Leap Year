@@ -1,0 +1,8 @@
+#LeapYear
+#Last Modified: May 22nd, 2024
+#Author: Bhavan 
+#Desc:  program that will use a for loop to print all leap years between 2000 and 2100
+
+for year in range (2000, 2101):
+    if year % 4 == 0:
+        print (year, "is a leap year")
