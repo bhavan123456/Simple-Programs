@@ -1,0 +1,34 @@
+#1_ExtensionPrograms
+#Last Modified: March 23rd, 2024
+#Author: Bhavan 
+#Desc: outputs the amount of quarters, dimes, nickels, and pennies in order if nessicary for amount entered
+
+# Function to make change for amounts less than one dollar
+def make_change(amount):
+    # Initializing counters for coins
+    quarters = 0
+    dimes = 0
+    nickels = 0
+    cents = 0
+
+    # Calculating number of quarters
+    quarters = amount // 25
+    amount = amount % 25
+
+    # Calculating number of dimes
+    dimes = amount // 10
+    amount = amount % 10
+
+    # Calculating number of nickels
+    nickels = amount // 5
+    amount = amount % 5
+
+    # remaining amount is in cents
+    cents = amount
+
+    # Printing the output
+    print(f"{original_amount} cents: {quarters} quarters, {dimes} dimes, {nickels} nickels, and {cents} cents")
+
+# Taking user input
+original_amount = int(input("Enter the amount in cents (less than 100): "))
+make_change(original_amount)
