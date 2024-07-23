@@ -1,0 +1,23 @@
+#TenFloats
+#Last Modified: June 23rd, 2024
+#Author: Bhavan 
+#Desc: for loop to prompt for and input 10 floats
+
+# Initialize variables
+total = 0
+largest = float("-inf")
+
+# Prompt for and input 10 floats
+for i in range(10):
+    number = float(input(f"Enter float number {i+1}: "))
+    total += number
+
+    if number > largest:
+        largest = number
+
+# Calculate the average
+average = total / 10
+
+# Output the average and the largest number
+print(f"Average: {average}")
+print(f"Largest number: {largest}")
